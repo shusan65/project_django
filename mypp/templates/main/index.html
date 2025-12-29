@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Home Page</title>
+    {% load static %}
+<link  href ="{% static 'src/styles.css' %}" rel="stylesheet" />
+</head>
+<body>
+    {% if messages %}
+{% for message in messages %}
+<p> {{message}}</p>
+{% endfor %}
+{% endif %}
+<h1 class="text-red-500" > oi bhairey </h1>
+<p class="text-blue-600" > namaste ko momo khila na </p>
+</body>
+</html>
