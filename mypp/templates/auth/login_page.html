@@ -23,16 +23,16 @@
 
     <!-- Right: Form -->
     <div class="md:w-7/12 p-6 sm:p-8">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Create an Account</h2>
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">login to your account</h2>
 
 
       <form action="{% url "login" %}" method="POST" class="space-y-4 text-sm">
         {% csrf_token %}
         <div>
-          <label for="username" class="block text-gray-700 mb-1">Username</label>
-          <input type="text" id="username" name="username" value="{{data.username}}"
+          <label for="username" class="block text-gray-700 mb-1">email</label>
+          <input type="text" id="email" name="email" value="{{data.email}}"
             class="w-full border border-gray-300 px-3 py-2 rounded-md focus:ring-2 focus:ring-indigo-500 focus:outline-none" />
-            <p class="text-red-500">{{errors.username}} </p>
+            <p class="text-red-500">{{errors.email}} </p>
         </div>
 
         <div>
